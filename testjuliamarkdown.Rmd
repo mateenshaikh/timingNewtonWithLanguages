@@ -12,7 +12,7 @@ knitr::knit_engines$set(julia = JuliaCall::eng_juliacall)
 ```
 
 
-This documents the timings of a simple newton method in R, C (technically cpp but it's all just C), and julia.
+This documents the timings of a simple newton method in R, C (technically cpp but it's all just C code), and julia.
 
 The function is $f_0(x)=e^x+\sin(x)$ so the newton update would be
 $$x\leftarrow x-\frac{f_0(x)}{f_1(x)}=x-\frac{e^x+sin(x)}{e^x+cos(x)}$$
